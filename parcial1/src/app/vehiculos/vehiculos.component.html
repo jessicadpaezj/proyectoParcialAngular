@@ -1,0 +1,31 @@
+<img src="./../../images/carro.png" alt="">
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table" id="vehiculosTable">
+      <thead class="table-dark">
+        <tr>
+          <th class="h5">#</th>
+          <th class="h5">Marca</th>
+          <th class="h5">Línea</th>
+          <th class="h5">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of vehiculos">
+          <td>
+            <dd><strong>{{ v.id }}</strong></dd>
+          </td>
+          <td>
+            <dd>{{ v.marca }}</dd>
+          </td>
+          <td>
+            <dd>{{ v.linea }}</dd>
+          </td>
+          <td>
+            <dd>{{ v.modelo }}</dd>
+          </td>
+      </tbody>
+    </table>
+  </div>
+</div>
+
