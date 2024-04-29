@@ -24,8 +24,39 @@ export class VehiculosComponent implements OnInit {
     });
   }
 
+  calcularTotalRenault(): number {
+    let i = 0;
+    for (const vehiculo of this.vehiculos) {
+      if(vehiculo.marca == 'Renault') {
+        i++;
+      };
+    }
+    return i;
+  }
+  calcularTotalChevrolet(): number {
+    let i = 0;
+    for (const vehiculo of this.vehiculos) {
+      if(vehiculo.marca == 'Chevrolet') {
+        i++;
+      };
+    }
+    return i;
+  }
+
+  calcularTotalNissan(): number {
+    let i = 0;
+    for (const vehiculo of this.vehiculos) {
+      if(vehiculo.marca == 'Nissan') {
+        i++;
+      };
+    }
+    return i;
+  }
+
+
   ngOnInit() {
     this.getVehiculos();
   }
 
+  
 }
